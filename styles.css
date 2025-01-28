@@ -73,6 +73,7 @@ body {
   max-width: 311px;
   margin-top: 1rem;
   color: var(--Very-Dark-Blue);
+  font-weight: var(--Weight-200);
 }
 
 /* Cards section */
@@ -92,11 +93,17 @@ body {
   width: 311px;
   height: 222px;
   box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.15);
+  background-color: white;
 }
 
 .card-content {
   display: flex;
   flex-direction: column;
+}
+
+.card-content > p {
+  margin-top: 6px;
+  font-weight: var(--Weight-200);
 }
 
 .card-img {
