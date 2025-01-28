@@ -1,0 +1,167 @@
+:root {
+/* Primary Colors */
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/* Neutral Colors */
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+
+/* Font */
+--Poppins: "Poppins", sans-serif;
+--Weight-200: 200;
+--Weight-400: 400;
+--Weight-600: 600;
+}
+
+/* CSS Reset */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.533333333333333;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* Main Style */
+
+main {
+ margin-top: 5.313rem; 
+}
+
+body {
+  font-family: var(--Poppins);
+  background-color: var(--Very-Light-Gray);
+  font-size: 15px;
+}
+
+.head-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 4.75rem;
+}
+
+.head-content > h1, .head-content > h2 {
+  font-size: 1.5rem;
+}
+
+.head-content > h1 {
+  font-weight: var(--Weight-200);
+}
+
+.head-content > h2 {
+  font-weight: var(--Weight-600);
+}
+
+.head-content > p {
+  max-width: 311px;
+  margin-top: 1rem;
+  color: var(--Very-Dark-Blue);
+}
+
+/* Cards section */
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.563rem;
+  color: var(--Very-Dark-Blue);
+}
+
+.card {
+  padding: 1.75rem;
+  border-radius: 8px;
+  width: 311px;
+  height: 222px;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.15);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+ margin-left: auto;
+ width: 57px; 
+ margin-top: 2.063rem;
+}
+
+.supervisor {
+  border-top: 3px solid var(--Cyan);
+}
+
+
+.builder {
+  border-top: 3px solid var(--Red);
+}
+
+.karma {
+  border-top: 3px solid var(--Orange);
+}
+
+.calculator {
+  border-top: 3px solid var(--Blue);
+}
+
+
+@media screen and (min-width: 1400px) {
+  body {
+    height: 100vh;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.875rem;
+  }
+
+  .middle-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+  }
+
+  .head-content > h1, .head-content > h2 {
+    font-size: 2.25rem;
+  }
+
+  .head-content > p {
+    max-width: 540px;
+  }
+  
+  .card {
+    padding: 1.75rem;
+    border-radius: 8px;
+    width: 350px;
+    height: 250px;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.15);
+  }
+
+  .card-img {
+    margin-left: auto;
+    width: 64px; 
+    margin-top: 2.5rem;
+   }
+  
+
+}
+
+
