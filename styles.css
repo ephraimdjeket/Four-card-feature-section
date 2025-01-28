@@ -101,6 +101,10 @@ body {
   flex-direction: column;
 }
 
+.card-content > h2 {
+  font-weight: var(--Weight-600);
+}
+
 .card-content > p {
   margin-top: 6px;
   font-weight: var(--Weight-200);
